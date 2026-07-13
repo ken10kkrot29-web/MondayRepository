@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="ジャンケン.vcxproj" Id="1de3f0cc-34cf-4e31-ac85-a3677f7988e6" />
+</Solution>
