@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="20260706_obakento.vcxproj" />
+  <Project Path="20260706_obakento/20260706_obakento.vcxproj" Id="ebc4c0d2-d774-4c9c-919f-5c22d4426b64" />
 </Solution>
