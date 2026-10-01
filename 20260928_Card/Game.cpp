@@ -38,7 +38,7 @@ void Game::Start()
 void Game::DealInitialCards()
 {
 	// プレイヤーとCPUに初期カードを配る
-	for (int i = 0; i < INTTAL_CARD_COUNT; i++)
+	for (int i = 0; i < INITAL_CARD_COUNT; i++)
 	{
 		int playerCard = cardManager.DrawCard();
 		player.AddCard(playerCard);
