@@ -1,11 +1,18 @@
 #pragma once
 #include"Character.h"
-class Player : public Character
+class Player :public Character
 {
 public:
-	Player();
-	void Action(Character& target);
-private:
-	
-};
 
+	/// <summary>
+	/// Playerコンストラクタ
+	/// </summary>
+	Player();
+
+	/// <summary>
+	/// プレイヤーの行動選択
+	/// </summary>
+	/// <param name="target">対象キャラクター</param>
+	void Action(Character& target);
+
+};

@@ -1,25 +1,39 @@
 #pragma once
-#include<cstdlib>
-
 class Character
 {
 protected:
 	int hp;
-	int attack;
+	int attck;
 	int defense;
-	int avoid;
-
+	int evasion;
 public:
-	Character();
-	//ステータス表示
-	void ShowStatus();
-	//攻撃
-	void Attack(Character& target);
-	//回復
-	void Recovery();
-	//生存判定
-	bool IsAlive();
-	//HP取得
-	int GetHp();
-};
 
+	/// <summary>
+	/// コンストラクタ
+	/// </summary>
+	Character();
+	/// <summary> 
+	///ステータス表示
+	/// </summary>
+	void ShowStatus();
+	/// <summary>
+	/// 攻撃メソッド
+	/// </summary>
+	/// <param name="target">対象のキャラクターオブジェクト</param>
+	void Attack(Character& target);
+	/// <summary>
+	/// 回復メソッド
+	/// </summary>
+	void Recovery();
+	/// <summary>
+	/// 生存判定フラグ
+	/// </summary>
+	/// <returns>生存判定フラグ</returns>
+	bool IsAlive();
+	/// <summary>
+	///　HP取得 
+	/// </summary>
+	/// <returns>HP</returns>
+	int GetHp();
+
+};
