@@ -1,0 +1,58 @@
+2026年10月6日ワーク
+昨日 23:59 が期限
+•
+複数回提出できます
+手順
+まずは、コードに慣れましょう。
+下記のコードを見て以下の質問に答えましょう。
+class Character
+{
+ public:
+     int hp;
+     int attack;
+ };
+考えること
+1.Characterは何を表している？
+
+2.hpは何のためにある？
+
+3.attackは何のためにある？
+
+4.なぜ、この2つをCharacterの中に入れた？
+
+回答は、テキストで構いません。
+
+1.ある情報を持ったものを表すために作ったクラス
+言い換え（ゲームに登場するキャラクターを表すためのクラス）
+クラスの中にChaeacterという設計を新しく作っているイメージ
+
+
+2.CharacterのHPを保存するため。（PLAYERやENEMYを作った際に型を共有できる）
+同じCharacterという設計図から作ったとしても、それぞれ違うHPを持てる。
+
+3.Characterの攻撃を保存するため。（PLAYERやENEMYを作った際に型を共有できる）
+（イメージ図）
+player
+ ├─ hp = 100
+ └─ attack = 20
+
+enemy
+ ├─ hp = 50
+ └─ attack = 10
+
+4.HPも攻撃力も「キャラクターが持っている情報」だから。
+CharacterにはHPと攻撃力という情報がある。
+
+Charcterを使わなかったら、
+int playerHp;
+int playerAttack;
+
+int enemyHp;
+int enemyAttack;
+
+int bossHp;
+int bossAttack;
+
+int npcHp;
+int npcAttack;
+量が増えるのを防ぐ。

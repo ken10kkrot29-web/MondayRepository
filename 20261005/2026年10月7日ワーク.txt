@@ -1,0 +1,41 @@
+2026年10月7日ワーク
+今日 23:59 が期限
+•
+複数回提出できます
+手順
+昨日のソースコードに役割を追加しました。以下の問題をソースコードを読み解いて考えてください。
+class Character
+{
+ public:
+     int hp;
+     int attack;
+     void Attack(Character& target)
+     {
+         target.hp -= attack;
+     }
+ };
+考えること
+1.Attack()は何をしている？
+
+2.なぜAttack()をCharacterの中に書いた？
+
+3.この処理は「誰の仕事」？
+
+4.targetは何を表している？
+
+
+1.攻撃する相手のHPを、自分の攻撃力分だけ減らす（自分がENEMYへの攻撃＆ENEMYが自分への攻撃）の両パターン
+Characterは「キャラクター」に関する情報を共有しているため、Attack（）もChaeacterの中に入っているから。
+
+2.キャラクターが持っている能力やアタック、HPなどキャラクターが行う処理をCharacterにまとめているから。
+
+3.処理自体はCharacterで行われている。（攻撃する側のCharacterが処理している）
+
+4.攻撃する相手のCharacterを受け取る動作を表している。（攻撃対象のHPを、自分の攻撃力分減らす）
+＜イメージ＞
+player.Attack(enemy);の場合、
+（target = enemy）＝　target.hp
+結果、target.hp -= attack;
+と考えるとわかりやすい。（かも。）
+
+
