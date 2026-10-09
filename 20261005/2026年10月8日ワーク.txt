@@ -1,0 +1,25 @@
+2026年10月8日ワーク
+明日 23:59 が期限
+•
+複数回提出できます
+手順
+昨日のソースコードをそれぞれ継承をしてみました。以下の問題を回答してください。class Player : public Character { }; class Enemy : public Character { };
+1.PlayerとEnemyは何を継承している？
+
+2.PlayerとEnemyには何が共通している？
+
+3.なぜPlayerとEnemyにhpやattackを書かなくてもいい？
+
+4.Characterはどんな役割を持っている？
+
+1.PlayerとEnemyは、どちらもCharacterクラスを継承している。
+
+
+2.PlayerとEnemyは、Characterクラスから継承したHPや攻撃力などの共通するメンバーを利用できる。
+ただし、実際に何が共通しているかは、その時や書いている内容によって変わる。
+
+3.Characterクラスに定義されたhpやattackを持っており、継承によって利用できる。
+繰り返し書かなくても、利用できるようなものをCharacterの中に書き、その内容を継承している。
+
+4.Characterは、PlayerやEnemyに共通する情報や機能をまとめた基本クラスとしての役割を持っている。
+どちらも当てはまるようなないようがCharacterの中にかかれているため。

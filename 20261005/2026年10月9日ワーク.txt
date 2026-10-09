@@ -1,0 +1,44 @@
+2026年10月9日ワーク
+今日 23:59 が期限
+•
+複数回提出できます
+手順
+昨日まで作ったソースコードを動かしてみます。
+以下の質問について回答してください。
+int main(void)
+ {
+     Player player;
+     Enemy enemy;
+     player.hp = 100;
+     player.attack = 20;
+     enemy.hp = 50;
+     enemy.attack = 10;
+     player.Attack(enemy);
+     return 0
+}
+
+1.Player player;は何をしている？
+
+2.Enemy enemy;は何をしている？
+
+3.playerとPlayerは何が違う？
+
+4.player.Attack(enemy);では何をしている？
+
+5.なぜPlayerはEnemyを攻撃できる？
+
+
+
+1.Playerクラスをもとに、playerというオブジェクトを作っている。
+（プレイヤーという箱にプレイヤーという実態を作っている。）
+
+2.Enemyクラスをもとに、enemyというオブジェクトを作っている。（1と同じようなやり方）
+
+3.Player はクラスの名前で、player はそのクラスから作られたオブジェクトの名前。
+（HPを設定したり、関数を呼び出したりできるようになる。）
+
+4.playerオブジェクトのAttack関数を呼び出し、引数としてenemyオブジェクトを渡している。
+（Attack関数の中にある内容によって処理の内容も変わる）
+
+5.PlayerのAttack関数に、攻撃対象となるEnemyのオブジェクトを渡しているから。
+（PlayerがEnemyを攻撃できる仕組みは、クラスの定義やAttack関数の実装によって決まるため、確実にできるとはこの時点では言えない。）
